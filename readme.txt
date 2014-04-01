@@ -1,4 +1,4 @@
-=== Push Notification ===
+=== 3 in One Slider ===
 Contributors: cyberkishor 
 #Donate link: http://kishorkumarmahato.com.np/donate/
 Tags: Slide, slide show, slider, multiple slider, more slider
